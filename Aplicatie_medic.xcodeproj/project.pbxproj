@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C978BF4B2CFCC174009433DE /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = C978BF4A2CFCC174009433DE /* SQLite */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C978BF2A2CFCC119009433DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C978BF4B2CFCC174009433DE /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				C978BF1B2CFCC118009433DE /* Aplicatie_medic */,
 				C978BF2C2CFCC119009433DE /* Aplicatie_medicTests */,
 				C978BF362CFCC119009433DE /* Aplicatie_medicUITests */,
+				C978BF492CFCC174009433DE /* Frameworks */,
 				C978BF1A2CFCC118009433DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				C978BF332CFCC119009433DE /* Aplicatie_medicUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C978BF492CFCC174009433DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +125,7 @@
 			);
 			name = Aplicatie_medic;
 			packageProductDependencies = (
+				C978BF4A2CFCC174009433DE /* SQLite */,
 			);
 			productName = Aplicatie_medic;
 			productReference = C978BF192CFCC118009433DE /* Aplicatie_medic.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = C978BF102CFCC118009433DE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C978BF482CFCC16B009433DE /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C978BF1A2CFCC118009433DE /* Products */;
 			projectDirPath = "";
@@ -396,6 +413,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Aplicatie_medic/Preview Content\"";
+				DEVELOPMENT_TEAM = MA2S9ZR6SQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -424,6 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Aplicatie_medic/Preview Content\"";
+				DEVELOPMENT_TEAM = MA2S9ZR6SQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -552,6 +571,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C978BF482CFCC16B009433DE /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C978BF4A2CFCC174009433DE /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C978BF482CFCC16B009433DE /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C978BF112CFCC118009433DE /* Project object */;
 }
